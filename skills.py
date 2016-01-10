@@ -107,17 +107,14 @@ def smallest_int(number_list):
 
     """
 
-    # smallest_number = None
+    ordered_list = sorted(number_list)
 
-    # for number in number_list:
-    #     if smallest_number > number:
-    #         smallest_number = number
+    if number_list == []:
+        return None
+    else:
+        smallest_number = ordered_list[0]
 
-    # return smallest_number
-
-    number_list.sort()
-
-    return number_list[0]
+    return smallest_number
 
 
 def largest_int(number_list):
